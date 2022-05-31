@@ -14,7 +14,7 @@ public class TreeNode {
      }
 }
 
-public class Solution {
+public partial class Solution {
     public TreeNode CreateBinaryTree(int[][] descriptions) {
         var dictionary = new Dictionary<int, TreeNode>();
         var childrenSet = new HashSet<int>();

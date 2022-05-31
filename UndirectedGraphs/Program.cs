@@ -1,16 +1,22 @@
-﻿using System;
+﻿// See https://aka.ms/new-console-template for more information
+
+using System;
 using System.Text;
 
-namespace BinaryTrees
+namespace UndirectedGraphs
 {
-    static class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            var heap = new Heap();
-            solution("The quick brown fox jumps over the lazy dog", 39);
+            var graph = new WeightedGraph();
+            var a = solution("The quick brown fox jumps over the lazy dog", 39);
+
+
+            Console.Write(a);
         }
-        public string solution(string message, int K) {
+
+        public static string solution(string message, int K) {
             // write your code in C# 6.0 with .NET 4.5 (Mono)
             var count = 0;
             var words = message.Split(' ');
@@ -25,6 +31,7 @@ namespace BinaryTrees
                     sb.Append(' ');
                     sb.Append(word);
                     count += word.Length + 1;
+                    continue;
                 }
                 break;
             }
@@ -32,6 +39,4 @@ namespace BinaryTrees
             return sb.ToString();
         }
     }
-
-
 }

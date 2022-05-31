@@ -1,0 +1,40 @@
+10
+    20          balanceFactor = -1
+        30
+
+// leftRotation(10)
+
+
+// Right heavy tree
+10              10
+    30   ->         20  ->          20
+20                      30      10      30
+
+// rightRotation(30)
+// leftRotation(10)
+
+10
+    30 balanceFactor = 1 if (balanceFactor(root.right) > 0) it means our tree looks like as the start tree// RL rotation
+20
+
+10
+    20 balanceFactor = -1 if (balanceFactor(root.right) < 0) it means our tree looks like as the start tree // leftRotate
+        30
+
+
+
+
+Left heavy
+        30
+    20    -> balanceFactor(20) == 1 > 0 -> RightRotate(30)
+10
+
+RightRotate(3o)
+
+Left heavy
+        30
+    20    -> balanceFactor(20) == -1 < 0 -> LeftRotate(20) -> RightRotate(30)
+        10
+
+LeftRotate(20)
+RightRotate(30)
